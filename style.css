@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    height: 100%;
+}
+
+nav {
+    background-color: #f79a83;
+    border-bottom: 1px solid #fff;
+    position: fixed;
+    z-index: 1001;
+
+}
+
+.logo {
+    width: 80px;
+    cursor: pointer;
+}
+
+.nav-links {
+
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-links:hover {
+    text-decoration: underline;
+}
+
+
+nav a img {
+    max-width: 29px;
+
+}
+
+/*first page*/
+.page-1 {
+    position: relative;
+    margin-top: 100px;
+    /* Adjust margin if needed */
+}
+
+.page-1 img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.content-1 {
+    position: absolute;
+    top: 32%;
+    left: 10%;
+}
+
+.first-h1 {
+    font-family: "Nova Round", system-ui;
+    font-size: 80px;
+    color: #fff;
+    font-weight: 700;
+
+}
+
+#recipe {
+    margin-top: 20px;
+}
+
+.btn-1 {
+    background-color: transparent;
+    border-radius: 40px;
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 30px;
+}
+
+.page-2 {
+    position: relative;
+
+}
+
+.page-2 img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.content-2 , .content-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+    position: absolute;
+    top: 40%;
+    left: 26%;
+    height: 220px;
+    width: 700px;
+    background-color: #094f14ba;
+    border-radius: 80px;
+}
+
+.content-2 h3 ,.content-3 h3 {
+    font-size: 35px;
+    color: #fff;
+}
+
+.content-2 p  {
+
+    font-size: 22px;
+    color: #fff;
+}
+.btn-2 ,.btn-3{
+    background-color: transparent;
+    border-radius: 40px;
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 30px;
+}
+
+.page-3 {
+    position: relative;
+
+}
+
+.page-3 img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.content-3 p{
+    font-size: 18px;
+    color:#fff
+}
+/*footer*/
+.footer {
+    background-color: #3a3a3a;
+    color: #cccccc;
+    padding: 20px 0;
+  }
+  .footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 15px;
+  }
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  .footer-bottom {
+    text-align: center;
+    padding-top: 10px;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+@media (max-width:992px) {
+
+    #navbarNav{
+        background-color: green;
+    }
+    .first-h1 {
+        font-size: 50px;
+    }
+
+    .btn-1 {
+        font-size: 15px;
+    }
+    .content-2 ,.content-3{
+        top: 21%;
+        width: 583px;
+        left: 17%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .content-1 {
+        top: 75%;
+        left: 22%;
+    }
+
+    .first-h1 {
+        font-size: 70px;
+    }
+
+    .btn-1 {
+        position: absolute;
+        left: 25%;
+        padding: 10px 40px;
+    }
+    .content-2,.content-3{
+        top: 32%;
+        left: 8%;
+        width: 650px;
+    }
+   
+}
+
+@media (max-width: 705px) {
+
+
+    .btn {
+        left: 10%;
+    }
+
+    .first-h1 {
+        font-size: 60px;
+    }
+   .content-2,.content-3{
+    top: 30%;
+        left: 4%;
+        width: 538px;
+   }
+
+}
+
+@media (max-width: 576px) {
+
+    .content-1 {
+        top: 68%;
+
+    }
+
+    .first-h1 {
+        font-size: 40px;
+
+    }
+
+    .btn-1 {
+        left: 20%;
+        padding: 3px 22px;
+
+    }
+    .content-2, .content-3{
+        top: 30%;
+            left: 1%;
+            width: 353px;
+       }
+  .content-2 p{
+    font-size: 15px;
+  }
+  .btn-2{
+    font-size: 15px;
+  }
+  .content-3 p{
+    font-size: 10px;
+  }
+}
